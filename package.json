@@ -15,6 +15,7 @@
     "check-sensors": "./scripts/check-sensor-drivers.sh",
     "check-audio": "./scripts/check-audio-drivers.sh",
     "check-display": "./scripts/check-display-drivers.sh",
+    "monitor": "./scripts/monitor-download.sh",
     "test": "echo '请按照README.md中的步骤进行测试'"
   },
   "keywords": [
