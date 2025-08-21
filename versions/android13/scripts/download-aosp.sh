@@ -4,8 +4,8 @@
 
 echo "🚀 开始下载Android 13 AOSP源码..."
 
-# 设置环境变量
-export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest'
+# 设置环境变量 (使用最快的镜像源)
+export REPO_URL='https://mirrors.ustc.edu.cn/aosp/platform/manifest'
 export AOSP_VERSION='android-13.0.0_r1'
 export DEVICE_NAME='coral'  # Pixel 4代号
 export AOSP_DIR="$(pwd)/../../aosp_rom_android13"
@@ -15,7 +15,7 @@ mkdir -p $AOSP_DIR
 cd $AOSP_DIR
 
 echo "📥 初始化repo..."
-repo init -u $REPO_URL -b $AOSP_VERSION
+repo init -u $REPO_URL -b $AOSP_VERSION --repo-url=https://mirrors.tuna.tsinghua.edu.cn/git/git-repo
 
 echo "📋 同步源码..."
 repo sync -j$(nproc)
