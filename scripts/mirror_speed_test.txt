@@ -1,0 +1,5 @@
+清华大学镜像源|https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest|.225353973
+中科大镜像源|https://mirrors.ustc.edu.cn/aosp/platform/manifest|.183309359
+华为云镜像源|https://mirrors.huaweicloud.com/repository/aosp/platform/manifest|.243323085
+上海交大镜像源|https://mirror.sjtu.edu.cn/aosp/platform/manifest|.237009095
+清华大学AOSP镜像源|https://aosp.tuna.tsinghua.edu.cn/platform/manifest|.244110030
