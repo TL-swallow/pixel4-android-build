@@ -4,8 +4,11 @@
   "description": "Pixel 4 Android系统编译项目，用于测试手机APP设备信息获取",
   "main": "README.md",
   "scripts": {
-    "setup": "echo '请按照README.md中的步骤进行环境配置'",
-    "build": "echo '请按照README.md中的步骤进行编译'",
+    "setup": "./scripts/check-android13-env.sh",
+    "download": "./scripts/download-aosp.sh",
+    "modify": "./scripts/modify-aosp.sh",
+    "build": "./scripts/build-aosp.sh",
+    "flash": "./scripts/flash-device.sh",
     "test": "echo '请按照README.md中的步骤进行测试'"
   },
   "keywords": [

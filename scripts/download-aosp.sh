@@ -6,7 +6,7 @@ echo "🚀 开始下载AOSP源码..."
 
 # 设置环境变量
 export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/AOSP/platform/manifest'
-export AOSP_VERSION='android-11.0.0_r2'
+export AOSP_VERSION='android-13.0.0_r1'
 export DEVICE_NAME='coral'  # Pixel 4代号
 
 # 创建源码目录

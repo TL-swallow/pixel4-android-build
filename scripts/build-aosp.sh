@@ -12,9 +12,10 @@ echo "🔧 设置编译环境..."
 source build/envsetup.sh
 lunch aosp_coral-userdebug
 
-# 设置编译参数
-export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx4g"
-export ANDROID_JACK_VM_ARGS="-Xmx4g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
+# 设置编译参数 (Android 13优化)
+export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx6g"
+export ANDROID_JACK_VM_ARGS="-Xmx6g -Dfile.encoding=UTF-8 -XX:+TieredCompilation"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export USE_CCACHE=1
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_SIZE=50G

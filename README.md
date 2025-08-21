@@ -20,7 +20,7 @@
 - [x] Git配置完成
 - [x] GitHub Actions CI配置
 - [x] 项目文档模板
-- [ ] Android源码下载 (Android 11.0.0_r2)
+- [ ] Android源码下载 (Android 13.0.0_r1)
 - [ ] 编译环境配置
 - [ ] AOSP源码修改 (38个检测点)
 - [ ] 系统编译
@@ -29,7 +29,7 @@
 
 ## 🔍 隐私合规检测项
 
-基于Android 11.0.0_r2版本源码修改，适配Pixel 4机型，包含以下38个检测点：
+基于Android 13.0.0_r1版本源码修改，适配Pixel 4机型，包含以下38个检测点：
 
 ### 📱 权限与包管理
 | 检测项 | 文件路径 | 目标函数 |
@@ -183,7 +183,7 @@ npm run test
 
 ### 系统要求
 - **设备**: Google Pixel 4 (coral)
-- **Android版本**: Android 11.0.0_r2
+- **Android版本**: Android 13.0.0_r1
 - **存储空间**: 至少100GB可用空间
 - **内存**: 至少16GB RAM
 
