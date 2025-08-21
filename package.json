@@ -9,6 +9,12 @@
     "build": "./scripts/version-manager.sh build android13",
     "flash": "./scripts/version-manager.sh flash android13",
     "list": "./scripts/version-manager.sh list",
+    "check-drivers": "./scripts/check-all-drivers.sh",
+    "check-modem": "./scripts/check-modem.sh",
+    "check-camera": "./scripts/check-camera-drivers.sh",
+    "check-sensors": "./scripts/check-sensor-drivers.sh",
+    "check-audio": "./scripts/check-audio-drivers.sh",
+    "check-display": "./scripts/check-display-drivers.sh",
     "test": "echo '请按照README.md中的步骤进行测试'"
   },
   "keywords": [
