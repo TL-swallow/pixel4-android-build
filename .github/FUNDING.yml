@@ -1,0 +1,15 @@
+# 这些是支持的资金平台。GitHub将在您的个人资料页面上显示一个"赞助"按钮，指向此处。
+# 有关更多信息，请访问：https://docs.github.com/articles/displaying-a-sponsor-button-in-your-repository
+
+# 取消注释下面您想要显示的行，并删除您不想要显示的平台。
+# 要使用自定义图片，请将图片文件添加到您的存储库中，并将路径替换为以下"custom"行。
+
+github: [yourusername]
+# open_collective: # 或者，替换为集体名称
+# ko_fi: # 或者，替换为您的Ko-fi用户名
+# tidelift: # 或者，替换为Tidelift订阅名称
+# community_bridge: # 或者，替换为社区桥接项目名称
+# liberapay: # 或者，替换为Liberapay用户名
+# issuehunt: # 或者，替换为IssueHunt用户名
+# otechie: # 或者，替换为Otechie用户名
+# custom: https://www.paypal.me/yourusername # 或者，替换为自定义URL

@@ -1,0 +1,29 @@
+{
+  "name": "pixel4-android-build",
+  "version": "1.0.0",
+  "description": "Pixel 4 Android系统编译项目，用于测试手机APP设备信息获取",
+  "main": "README.md",
+  "scripts": {
+    "setup": "echo '请按照README.md中的步骤进行环境配置'",
+    "build": "echo '请按照README.md中的步骤进行编译'",
+    "test": "echo '请按照README.md中的步骤进行测试'"
+  },
+  "keywords": [
+    "android",
+    "pixel4",
+    "aosp",
+    "build",
+    "device-info",
+    "testing"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/pixel4-android-build.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/pixel4-android-build/issues"
+  },
+  "homepage": "https://github.com/yourusername/pixel4-android-build#readme"
+}

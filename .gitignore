@@ -1,0 +1,48 @@
+# Android编译环境忽略文件
+# 编译输出目录
+out/
+*.img
+*.zip
+
+# 下载的源码目录
+android-*
+lineage-*
+aosp-*
+
+# 临时文件
+*.tmp
+*.log
+*.cache
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 编译缓存
+ccache/
+*.o
+*.so
+
+# 下载缓存
+downloads/
+*.tar.gz
+*.tar.bz2
+
+# 环境变量文件
+.env
+local.properties
+
+# 密钥文件
+*.key
+*.pem
+*.p12
+
+# 备份文件
+*.bak
+*.backup
