@@ -20,10 +20,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/pixel4-android-build.git"
+    "url": "https://github.com/TL-swallow/pixel4-android-build.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/pixel4-android-build/issues"
+    "url": "https://github.com/TL-swallow/pixel4-android-build/issues"
   },
-  "homepage": "https://github.com/yourusername/pixel4-android-build#readme"
+      "homepage": "https://github.com/TL-swallow/pixel4-android-build#readme"
 }

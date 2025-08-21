@@ -1,6 +1,6 @@
 # Pixel 4 Android编译项目
 
-[![CI](https://github.com/yourusername/pixel4-android-build/workflows/Android%20Build%20CI/badge.svg)](https://github.com/yourusername/pixel4-android-build/actions)
+[![CI](https://github.com/TL-swallow/pixel4-android-build/workflows/Android%20Build%20CI/badge.svg)](https://github.com/TL-swallow/pixel4-android-build/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com/)
 
@@ -45,7 +45,7 @@ sudo apt-get install -y \
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/pixel4-android-build.git
+git clone https://github.com/TL-swallow/pixel4-android-build.git
 cd pixel4-android-build
 
 # 运行初始化脚本
@@ -144,9 +144,9 @@ npm run test
 
 ## 📞 联系方式
 
-- **项目主页**: [GitHub仓库](https://github.com/yourusername/pixel4-android-build)
-- **问题反馈**: [Issues](https://github.com/yourusername/pixel4-android-build/issues)
-- **讨论区**: [Discussions](https://github.com/yourusername/pixel4-android-build/discussions)
+- **项目主页**: [GitHub仓库](https://github.com/TL-swallow/pixel4-android-build)
+- **问题反馈**: [Issues](https://github.com/TL-swallow/pixel4-android-build/issues)
+- **讨论区**: [Discussions](https://github.com/TL-swallow/pixel4-android-build/discussions)
 
 ## 🙏 致谢
 
