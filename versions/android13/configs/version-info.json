@@ -1,0 +1,43 @@
+{
+  "version": "android13",
+  "android_version": "13.0.0_r1",
+  "device_name": "coral",
+  "device_model": "Pixel 4",
+  "build_type": "userdebug",
+  "compilation": {
+    "java_version": "11",
+    "python_version": "3.8+",
+    "make_version": "4.0+",
+    "gcc_version": "9.0+"
+  },
+  "requirements": {
+    "ram": "16GB",
+    "storage": "150GB",
+    "cpu_cores": "8+",
+    "os": "Ubuntu 20.04+"
+  },
+  "features": {
+    "privacy_detection": true,
+    "system_monitoring": true,
+    "real_time_logging": true,
+    "web_interface": true
+  },
+  "detection_points": 38,
+  "supported_apis": [
+    "TelephonyManager",
+    "LocationManager", 
+    "PackageManager",
+    "ActivityManager",
+    "BluetoothAdapter",
+    "CameraManager",
+    "SensorManager",
+    "WifiManager"
+  ],
+  "build_targets": [
+    "systemimage",
+    "userdataimage", 
+    "vendorimage",
+    "bootimage"
+  ],
+  "output_path": "aosp_rom_android13/out/target/product/coral"
+}

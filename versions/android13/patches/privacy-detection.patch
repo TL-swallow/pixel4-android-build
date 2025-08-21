@@ -1,0 +1,59 @@
+diff --git a/frameworks/base/core/java/android/app/ApplicationPackageManager.java b/frameworks/base/core/java/android/app/ApplicationPackageManager.java
+index 1234567..abcdefg 100644
+--- a/frameworks/base/core/java/android/app/ApplicationPackageManager.java
++++ b/frameworks/base/core/java/android/app/ApplicationPackageManager.java
+@@ -20,6 +20,7 @@ import android.content.pm.PackageManager;
+ import android.content.pm.PermissionInfo;
+ import android.content.pm.ResolveInfo;
+ import android.content.pm.SharedLibraryInfo;
++import android.privacy.detector.PrivacyDetector;
+ import android.util.Log;
+ 
+ import com.android.internal.annotations.VisibleForTesting;
+@@ -100,6 +101,7 @@ public class ApplicationPackageManager extends PackageManager {
+     @Override
+     public int checkPermission(String permName, String pkgName) {
++        PrivacyDetector.recordDetection(pkgName, "checkPermission", permName);
+         try {
+             return mPM.checkPermission(permName, pkgName);
+         } catch (RemoteException e) {
+@@ -110,6 +112,7 @@ public class ApplicationPackageManager extends PackageManager {
+     @Override
+     public List<PackageInfo> getInstalledPackages(int flags) {
++        PrivacyDetector.recordDetection(getCallingPackage(), "getInstalledPackages", String.valueOf(flags));
+         try {
+             return mPM.getInstalledPackages(flags, mContext.getUserId());
+         } catch (RemoteException e) {
+@@ -120,6 +123,7 @@ public class ApplicationPackageManager extends PackageManager {
+     @Override
+     public List<ApplicationInfo> getInstalledApplications(int flags) {
++        PrivacyDetector.recordDetection(getCallingPackage(), "getInstalledApplications", String.valueOf(flags));
+         try {
+             return mPM.getInstalledApplications(flags, mContext.getUserId());
+         } catch (RemoteException e) {
+diff --git a/frameworks/base/core/java/android/telephony/TelephonyManager.java b/frameworks/base/core/java/android/telephony/TelephonyManager.java
+index 2345678..bcdefgh 100644
+--- a/frameworks/base/core/java/android/telephony/TelephonyManager.java
++++ b/frameworks/base/core/java/android/telephony/TelephonyManager.java
+@@ -20,6 +20,7 @@ import android.annotation.SystemApi;
+ import android.content.Context;
+ import android.os.Build;
+ import android.os.RemoteException;
++import android.privacy.detector.PrivacyDetector;
+ import android.telephony.ims.ImsManager;
+ import android.util.Log;
+ 
+@@ -200,6 +201,7 @@ public class TelephonyManager {
+     @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
+     public String getDeviceId() {
++        PrivacyDetector.recordDetection(getCallingPackage(), "getDeviceId", "IMEI");
+         try {
+             ITelephony telephony = getITelephony();
+             if (telephony != null) {
+@@ -220,6 +222,7 @@ public class TelephonyManager {
+     @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
+     public String getImei(int slotIndex) {
++        PrivacyDetector.recordDetection(getCallingPackage(), "getImei", "slotIndex: " + slotIndex);
+         try {
+             ITelephony telephony = getITelephony();
+             if (telephony != null) {

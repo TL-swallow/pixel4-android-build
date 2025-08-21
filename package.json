@@ -4,11 +4,11 @@
   "description": "Pixel 4 Android系统编译项目，用于测试手机APP设备信息获取",
   "main": "README.md",
   "scripts": {
-    "setup": "./scripts/check-android13-env.sh",
-    "download": "./scripts/download-aosp.sh",
-    "modify": "./scripts/modify-aosp.sh",
-    "build": "./scripts/build-aosp.sh",
-    "flash": "./scripts/flash-device.sh",
+    "setup": "./scripts/version-manager.sh setup android13",
+    "download": "./scripts/version-manager.sh download android13",
+    "build": "./scripts/version-manager.sh build android13",
+    "flash": "./scripts/version-manager.sh flash android13",
+    "list": "./scripts/version-manager.sh list",
     "test": "echo '请按照README.md中的步骤进行测试'"
   },
   "keywords": [
